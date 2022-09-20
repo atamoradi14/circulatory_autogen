@@ -1,5 +1,28 @@
 [
   {
+    "vessel_type":"sensor_simple",
+    "BC_type":"nn",
+    "module_format":"cellml",
+    "module_file":"BG_modules.cellml",
+    "module_type":"simple_sensor_type",
+    "entrance_ports":
+    [
+      {
+        "port_type":"sensor_simple_port",
+        "variables":["v","u"]
+      }
+    ],
+    "exit_ports":
+    [
+      
+    ],
+    "variables_and_units":
+    [
+      ["u", "J_per_m3", "access", "variable"],
+      ["v", "m3_per_s", "access", "variable"]
+    ]
+  },
+  {
     "vessel_type":"arterial_simple",
     "BC_type":"vp",
     "module_format":"cellml",
@@ -251,6 +274,14 @@
       {
         "port_type":"flow_port",
         "variables":["v"]
+      },
+      {
+        "port_type":"sensor_simple_port",
+        "variables":["v_out","u_d"]
+      },
+      {
+        "port_type":"pressure_and_deriv_port",
+        "variables":["u_baroreceptor","du_baroreceptor_dt"]
       }
     ],
     "variables_and_units":
@@ -1889,7 +1920,6 @@
     "module_type":"f_observer_type",
     "entrance_ports":
     [
-     
       {
         "port_type":"flow_feedback_port",
         "variables":["v"]
@@ -1897,7 +1927,6 @@
     ],
     "exit_ports":
     [
-      
       {
         "port_type":"flow_feed_port",
         "variables":["v"],

@@ -1,0 +1,7 @@
+vessel_name,                  param_name,       param_type,  min,        max
+heart,                        q_lv,             state,       200e-6,     1600e-6 
+systemic_T,                   R_T,              const,       1e6,        1000e6
+aortic_root,                  C,                const,       2e-9,       1e-7
+venous_svc,                   C,                const,       1.0e-7,     1.0e-5
+heart,                        Rmod_valve_aov,   const,       1e3,        1e4
+heart,                        E_lv_B,           const,       2e6,        30e6

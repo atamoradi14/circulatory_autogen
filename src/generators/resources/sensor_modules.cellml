@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model name="modules" xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cellml="http://www.cellml.org/cellml/1.1#">
+    <component name="sensor_type">
+        <variable name="t" public_interface="in" units="second"/>
+        <!-- Constitutive parameters-->
+        <variable name="par1_out" public_interface="out" units="J_per_m3"/>
+        <variable name="par2_out" public_interface="out" units="m3_per_s"/>
+        <!-- State Variables-->
+        <variable name="u" public_interface="in" units="J_per_m3"/>
+        <variable name="v" public_interface="in" units="m3_per_s"/>
+        <!-- Constitutive Relations-->
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+                <eq/>
+                <ci>par1_out</ci>
+                <apply>
+                    <times/>
+                    <cn cellml:units="dimensionless">3</cn>
+                    <ci>u</ci>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <ci>par2_out</ci>
+                <apply>
+                    <times/>
+                    <cn cellml:units="dimensionless">1.2</cn>
+                    <ci>v</ci>
+                </apply>
+            </apply>
+        </math>
+    </component>
+</model>

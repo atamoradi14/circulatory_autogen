@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<model name="Parameters" xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cellml="http://www.cellml.org/cellml/1.1#">
+<component name="parameters_global">
+<variable initial_value="1050" name="rho" public_interface="out" units="Js2_per_m5"/>
+<variable initial_value="0.8" name="T" public_interface="out" units="second"/>
+<variable initial_value="4.0e-6" name="q_ra_0" public_interface="out" units="m3"/>
+<variable initial_value="10.0e-6" name="q_rv_0" public_interface="out" units="m3"/>
+<variable initial_value="4.0e-6" name="q_la_0" public_interface="out" units="m3"/>
+<variable initial_value="5.0e-6" name="q_lv_0" public_interface="out" units="m3"/>
+<variable initial_value="0.13" name="T_ac" public_interface="out" units="second"/>
+<variable initial_value="0.13" name="T_ar" public_interface="out" units="second"/>
+<variable initial_value="0.64" name="t_astart" public_interface="out" units="second"/>
+<variable initial_value="0.22" name="T_vc" public_interface="out" units="second"/>
+<variable initial_value="0.17" name="T_vr" public_interface="out" units="second"/>
+<variable initial_value="0.0" name="t_vstart" public_interface="out" units="second"/>
+<variable initial_value="7.998e+6" name="E_ra_A" public_interface="out" units="J_per_m6"/>
+<variable initial_value="9.331e+6" name="E_ra_B" public_interface="out" units="J_per_m6"/>
+<variable initial_value="73.315e+6" name="E_rv_A" public_interface="out" units="J_per_m6"/>
+<variable initial_value="6.665e+6" name="E_rv_B" public_interface="out" units="J_per_m6"/>
+<variable initial_value="9.331e+6" name="E_la_A" public_interface="out" units="J_per_m6"/>
+<variable initial_value="11.997e+6" name="E_la_B" public_interface="out" units="J_per_m6"/>
+<variable initial_value="366.575e+6" name="E_lv_A" public_interface="out" units="J_per_m6"/>
+<variable initial_value="10.664e+6" name="E_lv_B" public_interface="out" units="J_per_m6"/>
+<variable initial_value="0.3" name="K_vo_trv" public_interface="out" units="m3_per_Js"/>
+<variable initial_value="0.2" name="K_vo_puv" public_interface="out" units="m3_per_Js"/>
+<variable initial_value="0.3" name="K_vo_miv" public_interface="out" units="m3_per_Js"/>
+<variable initial_value="0.04" name="K_vo_aov" public_interface="out" units="m3_per_Js"/>
+<variable initial_value="0.4" name="K_vc_trv" public_interface="out" units="m3_per_Js"/>
+<variable initial_value="0.2" name="K_vc_puv" public_interface="out" units="m3_per_Js"/>
+<variable initial_value="0.4" name="K_vc_miv" public_interface="out" units="m3_per_Js"/>
+<variable initial_value="0.04" name="K_vc_aov" public_interface="out" units="m3_per_Js"/>
+<variable initial_value="0" name="M_rg_trv" public_interface="out" units="dimensionless"/>
+<variable initial_value="0" name="M_rg_puv" public_interface="out" units="dimensionless"/>
+<variable initial_value="0" name="M_rg_miv" public_interface="out" units="dimensionless"/>
+<variable initial_value="0" name="M_rg_aov" public_interface="out" units="dimensionless"/>
+<variable initial_value="1" name="M_st_trv" public_interface="out" units="dimensionless"/>
+<variable initial_value="1" name="M_st_puv" public_interface="out" units="dimensionless"/>
+<variable initial_value="1" name="M_st_miv" public_interface="out" units="dimensionless"/>
+<variable initial_value="1" name="M_st_aov" public_interface="out" units="dimensionless"/>
+<variable initial_value="0.01" name="l_eff" public_interface="out" units="metre"/>
+<variable initial_value="0.3e4" name="Rmod_valve_trv" public_interface="out" units="dimensionless"/>
+<variable initial_value="0.3e4" name="Rmod_valve_puv" public_interface="out" units="dimensionless"/>
+<variable initial_value="0.3e4" name="Rmod_valve_aov" public_interface="out" units="dimensionless"/>
+<variable initial_value="0.3e4" name="Rmod_valve_miv" public_interface="out" units="dimensionless"/>
+<variable initial_value="0.0009" name="A_nn_trv" public_interface="out" units="m2"/>
+<variable initial_value="0.0004" name="A_nn_puv" public_interface="out" units="m2"/>
+<variable initial_value="0.0006" name="A_nn_miv" public_interface="out" units="m2"/>
+<variable initial_value="0.000314" name="A_nn_aov" public_interface="out" units="m2"/>
+</component>
+<component name="parameters">
+<variable initial_value="1.333e+6" name="R_pvn" public_interface="out" units="Js_per_m6"/>
+<variable initial_value="0.60015e-8" name="C_pvn" public_interface="out" units="m6_per_J"/>
+<variable initial_value="1.0e-6" name="I_pvn" public_interface="out" units="Js2_per_m6"/>
+<variable initial_value="10.664e+6" name="R_par" public_interface="out" units="Js_per_m6"/>
+<variable initial_value="0.0309077e-8" name="C_par" public_interface="out" units="m6_per_J"/>
+<variable initial_value="1.0e-6" name="I_par" public_interface="out" units="Js2_per_m6"/>
+<variable initial_value="1.0e6" name="R_aortic_root" public_interface="out" units="Js_per_m6"/>
+<variable initial_value="1.2028e-08" name="C_aortic_root" public_interface="out" units="m6_per_J"/>
+<variable initial_value="1.0e+4" name="I_aortic_root" public_interface="out" units="Js2_per_m6"/>
+<variable initial_value="115400000.0" name="R_T_systemic" public_interface="out" units="Js_per_m6"/>
+<variable initial_value="1e-10" name="C_T_systemic" public_interface="out" units="m6_per_J"/>
+<variable initial_value="1114600.0" name="R_venous_svc" public_interface="out" units="Js_per_m6"/>
+<variable initial_value="1e-6" name="C_venous_svc" public_interface="out" units="m6_per_J"/>
+<variable initial_value="1.0e-3" name="I_venous_svc" public_interface="out" units="Js2_per_m6"/>
+</component>
+</model>

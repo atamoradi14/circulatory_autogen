@@ -1,0 +1,42 @@
+{"data_item": [
+    { "variable": "aortic_root/v",
+      "data_type": "constant",
+      "state_or_alg": "state",
+      "unit": "m3_per_s",
+      "weight": 1.0,
+      "obs_type": "mean",
+      "value": 1e-4
+    },
+    { "variable": "aortic_root/v",
+      "data_type": "constant",
+      "state_or_alg": "state",
+      "weight": 1.0,
+      "obs_type": "max",
+      "value": 5e-4
+    },
+    { "variable": "aortic_root/u",
+      "data_type": "constant",
+      "state_or_alg": "alg",
+      "unit": "J_per_m3",
+      "weight": 1.0,
+      "obs_type": "mean",
+      "value": 12000
+    },
+    { "variable": "aortic_root/u",
+      "data_type": "constant",
+      "state_or_alg": "alg",
+      "unit": "J_per_m3",
+      "weight": 5.0,
+      "obs_type": "max",
+      "value": 16000
+    },
+    { "variable": "aortic_root/u",
+      "data_type": "constant",
+      "state_or_alg": "alg",
+      "unit": "J_per_m3",
+      "weight": 5.0,
+      "obs_type": "min",
+      "value": 10500
+    }
+  ]
+}

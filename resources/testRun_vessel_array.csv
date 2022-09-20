@@ -1,0 +1,8 @@
+name,BC_type,vessel_type,inp_vessels,out_vessels
+pvn,                     vp, venous,             par,                  heart
+par,                     vp, arterial_simple,    heart,                pvn
+heart,                   vp, heart_new_valve,    venous_svc pvn,       arterial_secondpart par   
+aortic_root,             vv, arterial_simple,    arterial_secondpart,  systemic_T       
+systemic_T,              pp, terminal,           aortic_root,          venous_svc            
+venous_svc,              vp, venous,             systemic_T,           heart                
+arterial_secondpart,      vp, arterial_simple,           heart,         aortic_root
